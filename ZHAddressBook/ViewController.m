@@ -58,7 +58,7 @@
         _searchController = [[UISearchController alloc]initWithSearchResultsController:nil];
         _searchController.searchResultsUpdater = self;
         _searchController.delegate = self;
-        _searchController.dimsBackgroundDuringPresentation = YES;
+        _searchController.dimsBackgroundDuringPresentation = NO;
         _searchController.hidesNavigationBarDuringPresentation = YES;
         _searchController.searchBar.placeholder = @"Search";
         [_searchController.searchBar sizeToFit];

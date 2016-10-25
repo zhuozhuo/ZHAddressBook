@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E3454D41DBE3F67004C0EEA /* ZHNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3454D31DBE3F67004C0EEA /* ZHNavigationViewController.m */; };
 		9E5C3B201DB5F71600D2E3DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C3B1F1DB5F71600D2E3DA /* main.m */; };
 		9E5C3B231DB5F71600D2E3DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C3B221DB5F71600D2E3DA /* AppDelegate.m */; };
 		9E5C3B261DB5F71600D2E3DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C3B251DB5F71600D2E3DA /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E3454D21DBE3F67004C0EEA /* ZHNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNavigationViewController.h; sourceTree = "<group>"; };
+		9E3454D31DBE3F67004C0EEA /* ZHNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNavigationViewController.m; sourceTree = "<group>"; };
 		9E5C3B1B1DB5F71600D2E3DA /* ZHAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E5C3B1F1DB5F71600D2E3DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E5C3B211DB5F71600D2E3DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				9E5C3B511DB5F7B500D2E3DA /* Helper */,
 				9E5C3B211DB5F71600D2E3DA /* AppDelegate.h */,
 				9E5C3B221DB5F71600D2E3DA /* AppDelegate.m */,
+				9E3454D21DBE3F67004C0EEA /* ZHNavigationViewController.h */,
+				9E3454D31DBE3F67004C0EEA /* ZHNavigationViewController.m */,
 				9E5C3B241DB5F71600D2E3DA /* ViewController.h */,
 				9E5C3B251DB5F71600D2E3DA /* ViewController.m */,
 				9E5C3B271DB5F71600D2E3DA /* Main.storyboard */,
@@ -225,6 +230,7 @@
 				TargetAttributes = {
 					9E5C3B1A1DB5F71600D2E3DA = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 64QZ5ZPJ44;
 						ProvisioningStyle = Automatic;
 					};
 					9E5C3B331DB5F71600D2E3DA = {
@@ -295,6 +301,7 @@
 				9E5C3B571DB5F7B500D2E3DA /* ZHCAdressListManager.m in Sources */,
 				9E5C3B231DB5F71600D2E3DA /* AppDelegate.m in Sources */,
 				9E5C3B561DB5F7B500D2E3DA /* NSString+ZHCString.m in Sources */,
+				9E3454D41DBE3F67004C0EEA /* ZHNavigationViewController.m in Sources */,
 				9E5C3B201DB5F71600D2E3DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 64QZ5ZPJ44;
 				INFOPLIST_FILE = ZHAddressBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Imco.ZHAddressBook;
@@ -453,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 64QZ5ZPJ44;
 				INFOPLIST_FILE = ZHAddressBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Imco.ZHAddressBook;
@@ -525,6 +534,7 @@
 				9E5C3B4A1DB5F71600D2E3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E5C3B4B1DB5F71600D2E3DA /* Build configuration list for PBXNativeTarget "ZHAddressBookTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +543,7 @@
 				9E5C3B4D1DB5F71600D2E3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E5C3B4E1DB5F71600D2E3DA /* Build configuration list for PBXNativeTarget "ZHAddressBookUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +552,7 @@
 				9E5C3B501DB5F71600D2E3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
