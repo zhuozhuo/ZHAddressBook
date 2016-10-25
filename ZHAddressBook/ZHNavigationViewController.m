@@ -18,6 +18,10 @@
     [super viewDidLoad];
 //    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
 //    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    
+//    [self.navigationBar setBackgroundImage:[[UIImage alloc]init] forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationBar setShadowImage:[[UIImage alloc]init]];
+    
     self.navigationBar.translucent = YES;
     
     // Do any additional setup after loading the view.
