@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E2F34111DFE7C0800C35C75 /* ZHPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F340F1DFE7C0800C35C75 /* ZHPushViewController.m */; };
+		9E2F34121DFE7C0800C35C75 /* ZHPushViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E2F34101DFE7C0800C35C75 /* ZHPushViewController.xib */; };
 		9E3454D41DBE3F67004C0EEA /* ZHNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3454D31DBE3F67004C0EEA /* ZHNavigationViewController.m */; };
 		9E5C3B201DB5F71600D2E3DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C3B1F1DB5F71600D2E3DA /* main.m */; };
 		9E5C3B231DB5F71600D2E3DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C3B221DB5F71600D2E3DA /* AppDelegate.m */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E2F340E1DFE7C0800C35C75 /* ZHPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHPushViewController.h; sourceTree = "<group>"; };
+		9E2F340F1DFE7C0800C35C75 /* ZHPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHPushViewController.m; sourceTree = "<group>"; };
+		9E2F34101DFE7C0800C35C75 /* ZHPushViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHPushViewController.xib; sourceTree = "<group>"; };
 		9E3454D21DBE3F67004C0EEA /* ZHNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNavigationViewController.h; sourceTree = "<group>"; };
 		9E3454D31DBE3F67004C0EEA /* ZHNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNavigationViewController.m; sourceTree = "<group>"; };
 		9E5C3B1B1DB5F71600D2E3DA /* ZHAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +122,9 @@
 				9E3454D31DBE3F67004C0EEA /* ZHNavigationViewController.m */,
 				9E5C3B241DB5F71600D2E3DA /* ViewController.h */,
 				9E5C3B251DB5F71600D2E3DA /* ViewController.m */,
+				9E2F340E1DFE7C0800C35C75 /* ZHPushViewController.h */,
+				9E2F340F1DFE7C0800C35C75 /* ZHPushViewController.m */,
+				9E2F34101DFE7C0800C35C75 /* ZHPushViewController.xib */,
 				9E5C3B271DB5F71600D2E3DA /* Main.storyboard */,
 				9E5C3B2A1DB5F71600D2E3DA /* Assets.xcassets */,
 				9E5C3B2C1DB5F71600D2E3DA /* LaunchScreen.storyboard */,
@@ -272,6 +280,7 @@
 			files = (
 				9E5C3B2E1DB5F71600D2E3DA /* LaunchScreen.storyboard in Resources */,
 				9E5C3B2B1DB5F71600D2E3DA /* Assets.xcassets in Resources */,
+				9E2F34121DFE7C0800C35C75 /* ZHPushViewController.xib in Resources */,
 				9E5C3B291DB5F71600D2E3DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +311,7 @@
 				9E5C3B231DB5F71600D2E3DA /* AppDelegate.m in Sources */,
 				9E5C3B561DB5F7B500D2E3DA /* NSString+ZHCString.m in Sources */,
 				9E3454D41DBE3F67004C0EEA /* ZHNavigationViewController.m in Sources */,
+				9E2F34111DFE7C0800C35C75 /* ZHPushViewController.m in Sources */,
 				9E5C3B201DB5F71600D2E3DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

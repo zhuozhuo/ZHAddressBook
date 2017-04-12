@@ -11,11 +11,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchControllerDelegate>
+
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *showTableView;
 @property (strong, nonatomic) UISearchController *searchController;
-@property (strong, nonatomic) NSArray *sortedArray;//已经排序的数组
+@property (strong, nonatomic) NSArray *sortedArray; //已经排序的数组
 
 @end
-

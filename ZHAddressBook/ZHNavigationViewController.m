@@ -8,26 +8,30 @@
 
 #import "ZHNavigationViewController.h"
 
+
 @interface ZHNavigationViewController ()
 
 @end
 
+
 @implementation ZHNavigationViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-//    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-//    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
-    
-//    [self.navigationBar setBackgroundImage:[[UIImage alloc]init] forBarMetrics:UIBarMetricsDefault];
-//    [self.navigationBar setShadowImage:[[UIImage alloc]init]];
-    
+    //    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    //    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+
+    //    [self.navigationBar setBackgroundImage:[[UIImage alloc]init] forBarMetrics:UIBarMetricsDefault];
+    //    [self.navigationBar setShadowImage:[[UIImage alloc]init]];
+
     self.navigationBar.translucent = YES;
-    
+
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

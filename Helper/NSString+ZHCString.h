@@ -8,16 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NSString (ZHCString)
 
 //获取中文拼音首字母
--(NSString *)chineseStringFirstCharactor;
+- (NSString *)chineseStringFirstCharactor;
 
 //判断是否为中文开头
--(BOOL)isChineseCharacterBegin;
+- (BOOL)isChineseCharacterBegin;
 
 //判断是否为英文字母开头
--(BOOL)isLettersBegin;
+- (BOOL)isLettersBegin;
 
 
 @end

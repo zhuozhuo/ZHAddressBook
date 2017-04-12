@@ -11,38 +11,39 @@
 
 #define UnknownString @"#"
 
+
 @implementation ZHCAdressListManager
 
-+(NSMutableArray *)getIndexArray:(NSArray *)sourceArray
++ (NSMutableArray *)getIndexArray:(NSArray *)sourceArray
 {
     NSAssert(sourceArray != nil, @"getIndexArray sourceArray can not is nil");
     NSMutableArray *resultMuArray = [NSMutableArray array];
-    for (NSString * string in sourceArray) {
+    for (NSString *string in sourceArray) {
         NSString *preString = [self getFirstLetter:string];
         if (![resultMuArray containsObject:preString]) {
             [resultMuArray addObject:preString];
         }
     }
-    NSLog(@"resultsArray:%@",resultMuArray);
+    NSLog(@"resultsArray:%@", resultMuArray);
     if ([resultMuArray containsObject:UnknownString]) {
         [resultMuArray removeObject:UnknownString];
         NSArray *sortedArray = [resultMuArray sortedArrayUsingSelector:@selector(compare:)];
         resultMuArray = [NSMutableArray arrayWithArray:sortedArray];
         [resultMuArray addObject:UnknownString];
-    }else{
+    } else {
         NSArray *sortedArray = [resultMuArray sortedArrayUsingSelector:@selector(compare:)];
         resultMuArray = [NSMutableArray arrayWithArray:sortedArray];
     }
-    NSLog(@"newResultsArray:%@",resultMuArray);
+    NSLog(@"newResultsArray:%@", resultMuArray);
     return resultMuArray;
 }
 
 
-+(NSMutableArray *)getSectionTitleArray:(NSArray *)sourceArray
++ (NSMutableArray *)getSectionTitleArray:(NSArray *)sourceArray
 {
     NSAssert(sourceArray != nil, @"getSectionTitleArray sourceArray can not is nil");
     NSMutableArray *resultMuArray = [NSMutableArray array];
-    for (NSString * string in sourceArray) {
+    for (NSString *string in sourceArray) {
         NSString *preString = [self getFirstLetter:string];
         if (![resultMuArray containsObject:preString]) {
             [resultMuArray addObject:preString];
@@ -53,14 +54,14 @@
         NSArray *sortedArray = [resultMuArray sortedArrayUsingSelector:@selector(compare:)];
         resultMuArray = [NSMutableArray arrayWithArray:sortedArray];
         [resultMuArray addObject:UnknownString];
-    }else{
+    } else {
         NSArray *sortedArray = [resultMuArray sortedArrayUsingSelector:@selector(compare:)];
         resultMuArray = [NSMutableArray arrayWithArray:sortedArray];
     }
     return resultMuArray;
 }
 
-+(NSMutableArray *)getContactSortedArray:(NSArray *)sourceArray
++ (NSMutableArray *)getContactSortedArray:(NSArray *)sourceArray
 {
     NSAssert(sourceArray != nil, @"getContactSortedArray sourceArray can not is nil");
     NSMutableArray *sortedArray = [NSMutableArray array];
@@ -76,46 +77,41 @@
         [sortedArray addObject:sameArray];
     }
     return sortedArray;
-    
 }
 
-+(NSMutableArray *)getContainsObjectsWithSourceArray:(NSArray *)sourceArray withSearchString:(NSString *)searchString
++ (NSMutableArray *)getContainsObjectsWithSourceArray:(NSArray *)sourceArray withSearchString:(NSString *)searchString
 {
-     NSAssert(sourceArray != nil, @"getContainsObjectsWithSourceArray sourceArray can not is nil");
-    if (searchString.length>0) {
+    NSAssert(sourceArray != nil, @"getContainsObjectsWithSourceArray sourceArray can not is nil");
+    if (searchString.length > 0) {
         NSMutableArray *sameArray = [NSMutableArray array];
         for (NSString *object in sourceArray) {
-            if ([object containsString:searchString]) {//字符串包含
+            if ([object containsString:searchString]) { //字符串包含
                 [sameArray addObject:object];
-            }else{//首字母包含
+            } else { //首字母包含
                 NSString *letterString = [self getFirstLetter:object];
                 if ([searchString isEqualToString:letterString]) {
                     [sameArray addObject:object];
                 }
             }
-            
         }
         return sameArray;
 
-    }else{
+    } else {
         return [NSMutableArray arrayWithArray:sourceArray];
     }
-    
 }
 
-+(NSString *)getFirstLetter:(NSString *)string
++ (NSString *)getFirstLetter:(NSString *)string
 {
     NSString *preString = UnknownString;
-    string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];//去除两端空格和回车
-    if ([string isChineseCharacterBegin]) {//中文
+    string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]; //去除两端空格和回车
+    if ([string isChineseCharacterBegin]) {                                                              //中文
         preString = [string chineseStringFirstCharactor];
-    }else if ([string isLettersBegin]){//字母
-        preString = [[string substringToIndex:1]uppercaseString];
+    } else if ([string isLettersBegin]) { //字母
+        preString = [[string substringToIndex:1] uppercaseString];
     }
     return preString;
-
 }
-
 
 
 @end

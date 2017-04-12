@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface ZHCAdressListManager : NSObject
 
 
@@ -18,7 +19,7 @@
 
  @return 返回可变索引数组
  */
-+(NSMutableArray *)getIndexArray:(NSArray *)sourceArray;
++ (NSMutableArray *)getIndexArray:(NSArray *)sourceArray;
 
 
 /**
@@ -28,7 +29,7 @@
 
  @return 排序后的可变数组
  */
-+(NSMutableArray *)getContactSortedArray:(NSArray *)sourceArray;
++ (NSMutableArray *)getContactSortedArray:(NSArray *)sourceArray;
 
 
 /**
@@ -38,7 +39,7 @@
 
  @return 可变的标题数组
  */
-+(NSMutableArray *)getSectionTitleArray:(NSArray *)sourceArray;
++ (NSMutableArray *)getSectionTitleArray:(NSArray *)sourceArray;
 
 
 /**
@@ -49,5 +50,5 @@
 
  @return 可变的数组
  */
-+(NSMutableArray *)getContainsObjectsWithSourceArray:(NSArray *)sourceArray withSearchString:(NSString *)searchString;
++ (NSMutableArray *)getContainsObjectsWithSourceArray:(NSArray *)sourceArray withSearchString:(NSString *)searchString;
 @end
