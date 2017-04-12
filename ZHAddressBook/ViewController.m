@@ -73,6 +73,7 @@
     return _searchController;
 }
 
+
 #pragma mark - UISearchResultsUpdating
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController
 {
@@ -100,6 +101,8 @@
     }
     return rightIndexArray;
 }
+
+
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
 {
     if (index == 0) {
@@ -118,6 +121,7 @@
     return [sectionTitleArray objectAtIndex:section];
 }
 
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     if (self.searchController.isActive) {
@@ -125,6 +129,7 @@
     }
     return sectionTitleArray.count;
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -164,6 +169,7 @@
         [self.navigationController pushViewController:pushVC animated:YES];
     }];
 }
+
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
